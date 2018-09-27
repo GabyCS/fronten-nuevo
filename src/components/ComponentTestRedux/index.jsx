@@ -24,7 +24,7 @@ class ComponentTestRedux extends Component {
                 <h1>{this.props.pruebaReducer.nombre}</h1>
                 <img src={this.props.pruebaReducer.url}/>
                 <p>
-				<a onClick={()=>this.convertirPrinceso()}> Ver un princeso</a>
+				<a   className="btn-princeso" onClick={()=>this.convertirPrinceso()} > Ver un princeso</a>
                 </p>
 			</div>
 		);
