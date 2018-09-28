@@ -6,14 +6,13 @@ import App from './App';
 import registerServiceWorker from './registerServiceWorker';
 import {Provider} from 'react-redux';
 import Overview from './containers/Overview';
-import Footer from './components/Footer';
 import Header from './components/Header';
 import ComponentTestRedux from './components/ComponentTestRedux';
 import store from "./store"
 
 ReactDOM.render(
 	<Provider store={store}>
-		<div>
+		<div className="App">
 			<Header />
 			<BrowserRouter>
 				<Switch>
@@ -21,7 +20,6 @@ ReactDOM.render(
 					<Route exact path = '/prueba' component={ComponentTestRedux} />
 				</Switch>
 			</BrowserRouter>
-			<Footer />
 		</div>
 	</Provider>, document.getElementById('root')
 );
